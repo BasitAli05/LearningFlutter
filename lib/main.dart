@@ -1,25 +1,17 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'Home_page.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
-// write stl 
+// write stl
+// ignore: use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-          child: Text("welcome to 30 days of flutter"),
-          ),
-        ),
-      ),
-    );
+      home: HomePage()
+      );
   }
 }
